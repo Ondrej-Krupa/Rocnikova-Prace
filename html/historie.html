@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historie Linuxu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            max-width: 800px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .year-display {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Historie Linuxu</h1>
+    
+    <h2>Počátky a inspirace</h2>
+    <p>Linux má své kořeny v Unixu, operačním systému vyvinutém v Bell Labs v roce 1969. Unix byl velmi populární mezi akademiky a vývojáři, což vedlo k vývoji různých jeho variant. Jednou z klíčových událostí bylo vytvoření systému MINIX profesorem Andrewem Tanenbaumem, který sloužil jako výukový nástroj.</p>
+    
+    <h2>Zrození Linuxu</h2>
+    <p>V roce 1991 Linus Torvalds, tehdy student univerzity v Helsinkách, začal pracovat na vlastním jádře operačního systému inspirovaném MINIXem. První verzi Linuxu uvolnil 17. září 1991 pod vlastní licencí, později přešel na GNU General Public License (GPL), což umožnilo jeho široké přijetí a rozvoj.</p>
+    
+    <h2>Růst a popularita</h2>
+    <p>Během 90. let Linux získal podporu komunity a začal být využíván v akademickém a komerčním sektoru. Distribuce jako Slackware (1993) a Debian (1993) položily základy moderních distribucí. V této době vzniklo mnoho klíčových komponent ekosystému Linuxu, jako například X Window System a různá grafická prostředí.</p>
+    
+    <h2>Rozvoj distribucí</h2>
+    <p>V roce 1994 vyšla první verze Red Hat Linuxu a později vznikly další populární distribuce jako SUSE Linux, Ubuntu (2004) a další. Každá z nich přinesla inovace a rozšířila využití Linuxu v různých oblastech. Ubuntu se rychle stalo jednou z nejpopulárnějších distribucí díky své uživatelské přívětivosti a podpoře komunitou.</p>
+    
+    <h2>Linux v serverech a podnicích</h2>
+    <p>Během přelomu tisíciletí začaly společnosti jako IBM a Google masivně využívat Linux na serverech a cloudových platformách. Díky stabilitě, bezpečnosti a otevřenosti se stal preferovanou volbou pro podnikové servery, databázové systémy a datová centra.</p>
+    
+    <h2>Linux v mobilních zařízeních</h2>
+    <p>S příchodem Androidu v roce 2008, který je postaven na Linuxovém jádře, se Linux stal dominantní platformou pro mobilní zařízení. Dnes většina chytrých telefonů běží na nějaké variantě Linuxu, což ukazuje jeho flexibilitu a přizpůsobivost.</p>
+    
+    <h2>Superpočítače a embedded systémy</h2>
+    <p>Linux se stal standardem pro superpočítače díky své škálovatelnosti a výkonu. Většina nejvýkonnějších superpočítačů světa používá různé distribuce Linuxu. Kromě toho se Linux široce používá v embedded systémech, od routerů po chytré televize.</p>
+    
+    <h2>Moderní trendy a budoucnost</h2>
+    <p>Linux se nadále vyvíjí s důrazem na bezpečnost, kontejnerizaci (Docker, Kubernetes) a automatizaci IT infrastruktury. Open-source přístup umožňuje neustálé inovace a přizpůsobení potřebám moderního světa. S příchodem technologií jako Internet věcí (IoT) se očekává, že Linux bude hrát klíčovou roli v digitální transformaci.</p>
+    
+    <h2>Závěr</h2>
+    <p>Dnes je Linux základem serverových systémů, cloudových služeb, mobilních zařízení (Android) a superpočítačů. Díky své otevřenosti a flexibilitě zůstává klíčovou součástí IT infrastruktury po celém světě. Vývoj Linuxu pokračuje, přičemž komunita vývojářů neustále přináší nová vylepšení a inovace.</p>
+
+    <div class="year-display" id="yearDisplay">Rok: 1991</div>
+    <script>
+        const yearDisplay = document.getElementById('yearDisplay');
+        const sections = document.querySelectorAll('h2');
+        const years = [1991, 1992, 1996, 2001, 2004, 2011, 2020];
+
+        window.addEventListener('scroll', () => {
+            let currentYear = years[0];
+            sections.forEach((section, index) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight / 2) {
+                    currentYear = years[index];
+                }
+            });
+            yearDisplay.textContent = 'Rok: ' + currentYear;
+        });
+    </script>
+</body>
+</html>
