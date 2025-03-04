@@ -6,7 +6,6 @@
     <title>Linux</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/prikazy.css">
-    
 </head>
 <body>
     <header>
@@ -16,8 +15,7 @@
             <nav>
                 <ul>
                     <li><a href="html/historie.html">Historie Linuxu</a></li>
-
-                    <li><a href="#distribuce">Distribuce Linuxu</a></li>
+                    <li><a href="src/pic/distribuce.svg">Distribuce Linuxu</a></li>
                     <li><a href="html/prikazy.html">Příkazy</a></li>
                     <li><a href="#Quiz">Quiz</a></li>
                 </ul>
@@ -25,19 +23,53 @@
         </div>
     </header>
     <main>
-        <section id="Uvod">
-            <font size="6"><h2>Co je to Linux</h2></font>
-           <font size="5,5"><p>Linux je výkonný a flexibilní operační systém, který se vyznačuje svou otevřeností a svobodnou dostupností. Je založen na jádře Linux, které v roce 1991 vytvořil finský programátor Linus Torvalds jako alternativu k uzavřeným systémům. Od té doby se Linux stal jedním z nejrozšířenějších operačních systémů na světě, využívaným nejen na serverech, superpočítačích a vestavěných zařízeních, ale i na běžných osobních počítačích.
+        <section id="Uvod" class="content-section">
+            <h2>Co je to Linux</h2>
+            <p class="intro-text">Linux je výkonný a flexibilní operační systém, který se vyznačuje svou otevřeností a svobodnou dostupností. Je založen na jádře Unix, které v roce 1991 vytvořil finský programátor Linus Torvalds jako alternativu k uzavřeným systémům. Od té doby se Linux stal jedním z nejrozšířenějších operačních systémů na světě, využívaným nejen na serverech, superpočítačích a vestavěných zařízeních, ale i na běžných osobních počítačích.</p>
 
-                Jednou z hlavních předností Linuxu je jeho otevřený kód, což znamená, že kdokoli může systém upravovat, vylepšovat a sdílet. Díky tomu existuje mnoho různých distribucí (například Ubuntu, Debian, Fedora či Arch Linux), které se liší zaměřením, uživatelským prostředím i správou balíčků. Linux také klade důraz na bezpečnost a stabilitu, což z něj činí oblíbenou volbu pro servery i pokročilé uživatele.
-                
-                Na této stránce najdete různé návody a tipy, které vám pomohou porozumět Linuxu, naučit se jej efektivně používat a objevit jeho široké možnosti. Ať už jste začátečník nebo zkušený uživatel, Linux vám otevírá dveře do světa svobodného softwaru a nekonečných možností přizpůsobení.</p></font> 
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Otevřený kód</h3>
+                    <p>Linux je založen na principu open-source, což znamená, že kdokoli může systém upravovat, vylepšovat a sdílet.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Různé distribuce</h3>
+                    <p>Existuje mnoho distribucí (Ubuntu, Debian, Fedora, Arch Linux) s různým zaměřením a uživatelským prostředím.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Bezpečnost a stabilita</h3>
+                    <p>Linux je známý svou bezpečností a stabilitou, což z něj činí oblíbenou volbu pro servery i pokročilé uživatele.</p>
+                </div>
+            </div>
+            <p class="cta-text">Na této stránce najdete různé návody a tipy, které vám pomohou porozumět Linuxu, naučit se jej efektivně používat a objevit jeho široké možnosti. Ať už jste začátečník nebo zkušený uživatel, Linux vám otevírá dveře do světa svobodného softwaru a nekonečných možností přizpůsobení.</p>
         </section>
 
+        <section class="resources-section">
+            <h2>Užitečné zdroje</h2>
+            <div class="resources-grid">
+                <a href="html/historie.html" class="resource-card">
+                    <h3>Historie Linuxu</h3>
+                    <p>Poznejte vývoj a milníky Linuxu</p>
+                </a>
+                <a href="html/prikazy.html" class="resource-card">
+                    <h3>Příkazy</h3>
+                    <p>Základní a pokročilé příkazy</p>
+                </a>
+                <a href="#distribuce" class="resource-card">
+                    <h3>Distribuce</h3>
+                    <p>Přehled nejpopulárnějších distribucí</p>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p> 2025 Ondřej Krupa</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Ondřej Krupa</p>
+            <nav class="footer-nav">
+            </nav>
+        </div>
     </footer>
+
 </body>
-</html>
