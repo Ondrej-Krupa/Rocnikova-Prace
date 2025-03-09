@@ -96,7 +96,9 @@ main {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    color: #333; /* Set text color for better readability */
 }
+
 
 
 
