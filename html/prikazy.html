@@ -27,403 +27,726 @@
         <section class="commands-section">
             <h2 class="section-title">Linux Command Reference</h2>
             
-           
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-list command-icon"></i>
-                    <h3>ls - výpis souborů</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>ls - Výpis souborů v adresáři.</h3>
                 </div>
                 <div class="command-content">
                     <pre>$ ls -la</pre>
-                    <p>Příkaz <code>ls</code> zobrazí obsah adresáře.</p>
+                    <p>Zobrazí seznam souborů a složek v aktuálním adresáři. Použití přepínače `-la` zobrazí i skryté soubory a podrobné informace.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-folder-open command-icon"></i>
-                    <h3>cd - změna adresáře</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>cd - Změna aktuálního adresáře.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ cd /cesta/k/adresari</pre>
-                    <p>Příkaz <code>cd</code> změní aktuální pracovní adresář.</p>
+                    <pre>$ cd /cesta/k/adresáři</pre>
+                    <p>Slouží k přesunu mezi adresáři. Například `cd ..` vás posune o úroveň výše.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-user-minus command-icon"></i>
-                    <h3>userdel - odstranění uživatele</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>pwd - Zobrazení aktuálního adresáře.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ sudo userdel uzivatel</pre>
-                    <p>Příkaz <code>userdel</code> odstraní uživatele ze systému.</p>
+                    <pre>$ pwd</pre>
+                    <p>Zobrazí aktuální pracovní adresář, ve kterém se nacházíte.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-unlock command-icon"></i>
-                    <h3>passwd - změna hesla</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>mkdir - Vytvoření nového adresáře.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ passwd</pre>
-                    <p>Příkaz <code>passwd</code> změní heslo aktuálního uživatele.</p>
+                    <pre>$ mkdir nový_adresář</pre>
+                    <p>Vytvoří nový adresář. Například `mkdir moje_slozka` vytvoří složku s názvem 'moje_slozka'.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-network-wired command-icon"></i>
-                    <h3>ifconfig - síťová rozhraní</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>rmdir - Odstranění prázdného adresáře.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ ifconfig</pre>
-                    <p>Příkaz <code>ifconfig</code> zobrazí informace o síťových rozhraních.</p>
+                    <pre>$ rmdir prázdný_adresář</pre>
+                    <p>Odstraní prázdný adresář. Pokud obsahuje soubory, je třeba použít `rm -r`.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-wifi command-icon"></i>
-                    <h3>iwconfig - bezdrátová rozhraní</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>rm - Smazání souboru nebo složky.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ iwconfig</pre>
-                    <p>Příkaz <code>iwconfig</code> zobrazí informace o bezdrátových rozhraních.</p>
+                    <pre>$ rm soubor.txt</pre>
+                    <p>Slouží k odstranění souborů nebo adresářů. Přepínač `-r` odstraní složku i s obsahem.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-route command-icon"></i>
-                    <h3>route - směrovací tabulka</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>cp - Kopírování souborů.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ route -n</pre>
-                    <p>Příkaz <code>route</code> zobrazí směrovací tabulku.</p>
+                    <pre>$ cp zdroj.txt cíl.txt</pre>
+                    <p>Kopíruje soubory nebo složky. Například `cp soubor.txt /zaloha/` zkopíruje soubor do složky 'zaloha'.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-server command-icon"></i>
-                    <h3>service - správa služeb</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>mv - Přesunutí nebo přejmenování souboru.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ sudo service apache2 restart</pre>
-                    <p>Příkaz <code>service</code> spravuje systémové služby.</p>
+                    <pre>$ mv soubor.txt nový_adresář/</pre>
+                    <p>Přesune nebo přejmenuje soubor. Například `mv starý_název.txt nový_název.txt` přejmenuje soubor.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-cogs command-icon"></i>
-                    <h3>systemctl - správa systémových služeb</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>touch - Vytvoření prázdného souboru.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ sudo systemctl status sshd</pre>
-                    <p>Příkaz <code>systemctl</code> spravuje systémové služby v systemd.</p>
+                    <pre>$ touch nový_soubor.txt</pre>
+                    <p>Vytvoří prázdný soubor nebo aktualizuje čas poslední úpravy existujícího souboru.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-clock command-icon"></i>
-                    <h3>crontab - plánování úloh</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>find - Hledání souborů v systému.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ crontab -e</pre>
-                    <p>Příkaz <code>crontab</code> umožňuje plánování pravidelných úloh.</p>
+                    <pre>$ find /cesta -name "soubor.txt"</pre>
+                    <p>Hledání souborů v systému.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-terminal command-icon"></i>
-                    <h3>alias - vytvoření aliasu</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ alias ll='ls -la'</pre>
-                    <p>Příkaz <code>alias</code> vytvoří zkratku pro příkazy.</p>
-                </div>
-            </div>
-
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-archive command-icon"></i>
-                    <h3>unzip - rozbalení archivu</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ unzip archiv.zip</pre>
-                    <p>Příkaz <code>unzip</code> rozbalí zip archiv.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file command-icon"></i>
-                    <h3>touch - vytvoření souboru</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ touch novy_soubor.txt</pre>
-                    <p>Příkaz <code>touch</code> vytvoří nový prázdný soubor nebo aktualizuje časové razítko existujícího souboru.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-folder command-icon"></i>
-                    <h3>mkdir - vytvoření adresáře</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ mkdir novy_adresar</pre>
-                    <p>Příkaz <code>mkdir</code> vytvoří nový adresář.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-code command-icon"></i>
-                    <h3>nano - textový editor</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ nano soubor.txt</pre>
-                    <p>Příkaz <code>nano</code> otevře jednoduchý textový editor.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-alt command-icon"></i>
-                    <h3>cat - zobrazení obsahu souboru</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>cat - Zobrazení obsahu souboru.</h3>
                 </div>
                 <div class="command-content">
                     <pre>$ cat soubor.txt</pre>
-                    <p>Příkaz <code>cat</code> zobrazí obsah souboru.</p>
+                    <p>Zobrazení obsahu souboru.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-export command-icon"></i>
-                    <h3>scp - bezpečné kopírování</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>less - Postupné procházení obsahu souboru.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ scp soubor.txt user@remote:/cesta</pre>
-                    <p>Příkaz <code>scp</code> bezpečně kopíruje soubory mezi počítači.</p>
+                    <pre>$ less soubor.txt</pre>
+                    <p>Postupné procházení obsahu souboru.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-lock command-icon"></i>
-                    <h3>ssh - vzdálené připojení</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>more - Jednodušší alternativa k `less`.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ ssh user@remote</pre>
-                    <p>Příkaz <code>ssh</code> umožňuje vzdálené připojení k jinému počítači.</p>
+                    <pre>$ more soubor.txt</pre>
+                    <p>Jednodušší alternativa k `less`.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-import command-icon"></i>
-                    <h3>rsync - synchronizace souborů</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ rsync -avz zdroj/ cil/</pre>
-                    <p>Příkaz <code>rsync</code> synchronizuje soubory a adresáře mezi lokálním a vzdáleným systémem.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-signature command-icon"></i>
-                    <h3>diff - porovnání souborů</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ diff soubor1 soubor2</pre>
-                    <p>Příkaz <code>diff</code> porovnává dva soubory a zobrazuje rozdíly.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-download command-icon"></i>
-                    <h3>curl - stahování dat</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ curl -O https://example.com/soubor</pre>
-                    <p>Příkaz <code>curl</code> stahuje data z webových serverů.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-upload command-icon"></i>
-                    <h3>ftp - přenos souborů</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ ftp hostname</pre>
-                    <p>Příkaz <code>ftp</code> umožňuje přenos souborů přes FTP protokol.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-invoice command-icon"></i>
-                    <h3>wc - počet řádků, slov a znaků</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="command-content">
-                    <pre>$ wc soubor.txt</pre>
-                    <p>Příkaz <code>wc</code> počítá řádky, slova a znaky v souboru.</p>
-                </div>
-            </div>
-
-            <div class="command-box">
-                <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-word command-icon"></i>
-                    <h3>head - zobrazení začátku souboru</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>head - Zobrazení prvních X řádků souboru.</h3>
                 </div>
                 <div class="command-content">
                     <pre>$ head -n 10 soubor.txt</pre>
-                    <p>Příkaz <code>head</code> zobrazí prvních 10 řádků souboru.</p>
+                    <p>Zobrazení prvních X řádků souboru.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-word command-icon"></i>
-                    <h3>tail - zobrazení konce souboru</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>tail - Zobrazení posledních X řádků souboru.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ tail -f logfile.log</pre>
-                    <p>Příkaz <code>tail</code> zobrazí posledních 10 řádků souboru a sleduje změny.</p>
+                    <pre>$ tail -n 10 soubor.txt</pre>
+                    <p>Zobrazení posledních X řádků souboru.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-archive command-icon"></i>
-                    <h3>gzip - komprese souborů</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>nano - Otevření souboru v jednoduchém editoru.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ nano soubor.txt</pre>
+                    <p>Otevření souboru v jednoduchém editoru.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>vim - Otevření souboru v pokročilém editoru.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ vim soubor.txt</pre>
+                    <p>Otevření souboru v pokročilém editoru.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>grep - Hledání textu v souborech.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ grep 'text' soubor.txt</pre>
+                    <p>Hledání textu v souborech.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>diff - Porovnání dvou souborů.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ diff soubor1.txt soubor2.txt</pre>
+                    <p>Porovnání dvou souborů.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>wc - Počet řádků, slov a znaků v souboru.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ wc -l soubor.txt</pre>
+                    <p>Počet řádků, slov a znaků v souboru.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>whoami - Zobrazení aktuálního uživatele.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ whoami</pre>
+                    <p>Zobrazení aktuálního uživatele.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>who - Seznam přihlášených uživatelů.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ who</pre>
+                    <p>Seznam přihlášených uživatelů.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>id - Zobrazení informací o uživateli.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ id uživatel</pre>
+                    <p>Zobrazení informací o uživateli.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>passwd - Změna hesla uživatele.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ passwd</pre>
+                    <p>Změna hesla uživatele.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>adduser - Přidání nového uživatele.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ adduser nový_uzivatel</pre>
+                    <p>Přidání nového uživatele.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>deluser - Smazání uživatele.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ deluser uživatel</pre>
+                    <p>Smazání uživatele.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>groups - Zobrazení skupin aktuálního uživatele.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ groups</pre>
+                    <p>Zobrazení skupin aktuálního uživatele.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>chmod - Změna oprávnění souboru.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ chmod 755 soubor</pre>
+                    <p>Změna oprávnění souboru.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>chown - Změna vlastníka souboru.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ chown uživatel:skupina soubor</pre>
+                    <p>Změna vlastníka souboru.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>df - Zobrazení využití disků.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ df -h</pre>
+                    <p>Zobrazení využití disků.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>du - Velikost složky nebo souboru.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ du -sh složka</pre>
+                    <p>Velikost složky nebo souboru.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>free - Využití RAM.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ free -m</pre>
+                    <p>Využití RAM.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>top - Zobrazení běžících procesů.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ top</pre>
+                    <p>Zobrazení běžících procesů.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>htop - Interaktivní správce procesů (musí být nainstalován).</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ htop</pre>
+                    <p>Interaktivní správce procesů (musí být nainstalován).</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>ps - Seznam běžících procesů.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ ps aux</pre>
+                    <p>Seznam běžících procesů.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>kill - Ukončení procesu podle ID.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ kill PID</pre>
+                    <p>Ukončení procesu podle ID.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>pkill - Ukončení procesu podle jména.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ pkill název_procesu</pre>
+                    <p>Ukončení procesu podle jména.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>ping - Odeslání testovacích paketů na server.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ ping 8.8.8.8</pre>
+                    <p>Odeslání testovacích paketů na server.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>wget - Stažení souboru z internetu.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ wget https://example.com/soubor</pre>
+                    <p>Stažení souboru z internetu.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>curl - Alternativní stažení souboru.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ curl -O https://example.com/soubor</pre>
+                    <p>Alternativní stažení souboru.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>ifconfig - Informace o síťových adaptérech (starší systémy).</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ ifconfig</pre>
+                    <p>Informace o síťových adaptérech (starší systémy).</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>ip - Novější alternativa `ifconfig`.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ ip addr</pre>
+                    <p>Novější alternativa `ifconfig`.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>netstat - Zobrazení aktivních síťových spojení.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ netstat -tulnp</pre>
+                    <p>Zobrazení aktivních síťových spojení.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>ss - Alternativa `netstat`.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ ss -tulnp</pre>
+                    <p>Alternativa `netstat`.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>tar - Vytvoření tar archivu.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ tar -cvf archiv.tar složka</pre>
+                    <p>Vytvoření tar archivu.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>gzip - Komprese souboru.</h3>
                 </div>
                 <div class="command-content">
                     <pre>$ gzip soubor</pre>
-                    <p>Příkaz <code>gzip</code> komprimuje soubory pomocí gzip algoritmu.</p>
+                    <p>Komprese souboru.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-archive command-icon"></i>
-                    <h3>gunzip - dekomprese souborů</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>gunzip - Dekomprese souboru.</h3>
                 </div>
                 <div class="command-content">
                     <pre>$ gunzip soubor.gz</pre>
-                    <p>Příkaz <code>gunzip</code> dekomprimuje soubory komprimované pomocí gzip.</p>
+                    <p>Dekomprese souboru.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-archive command-icon"></i>
-                    <h3>tar - archivace souborů</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>zip - Vytvoření ZIP archivu.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ tar -cvf archiv.tar slozka/</pre>
-                    <p>Příkaz <code>tar</code> vytváří archivy souborů.</p>
+                    <pre>$ zip -r archiv.zip složka</pre>
+                    <p>Vytvoření ZIP archivu.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-archive command-icon"></i>
-                    <h3>untar - rozbalení archivu</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>unzip - Rozbalení ZIP archivu.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ tar -xvf archiv.tar</pre>
-                    <p>Příkaz <code>tar</code> rozbalí archiv souborů.</p>
+                    <pre>$ unzip archiv.zip</pre>
+                    <p>Rozbalení ZIP archivu.</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-code command-icon"></i>
-                    <h3>sed - stream editor</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>apt - Aktualizace seznamu balíčků (Debian/Ubuntu).</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ sed 's/staré/nové/' soubor.txt</pre>
-                    <p>Příkaz <code>sed</code> provádí textové transformace na vstupním streamu.</p>
+                    <pre>$ apt update</pre>
+                    <p>Aktualizace seznamu balíčků (Debian/Ubuntu).</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-code command-icon"></i>
-                    <h3>awk - textový procesor</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>dnf - Aktualizace balíčků (Fedora).</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ awk '{print $1}' soubor.txt</pre>
-                    <p>Příkaz <code>awk</code> je mocný nástroj pro zpracování textu.</p>
+                    <pre>$ dnf update</pre>
+                    <p>Aktualizace balíčků (Fedora).</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-code command-icon"></i>
-                    <h3>cut - výřez textu</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>pacman - Aktualizace balíčků (Arch Linux).</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ cut -d: -f1 /etc/passwd</pre>
-                    <p>Příkaz <code>cut</code> vyřezává části řádků ze souborů.</p>
+                    <pre>$ pacman -Syu</pre>
+                    <p>Aktualizace balíčků (Arch Linux).</p>
                 </div>
             </div>
-
+            
             <div class="command-box">
                 <div class="command-header" onclick="toggleCommand(this)">
-                    <i class="fas fa-file-code command-icon"></i>
-                    <h3>tr - transformace znaků</h3>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+                    <h3>echo - Výpis textu do terminálu.</h3>
                 </div>
                 <div class="command-content">
-                    <pre>$ tr 'a-z' 'A-Z' < soubor.txt</pre>
-                    <p>Příkaz <code>tr</code> transformuje nebo maže znaky.</p>
+                    <pre>$ echo 'Ahoj světe'</pre>
+                    <p>Výpis textu do terminálu.</p>
                 </div>
             </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>history - Seznam dříve zadaných příkazů.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ history</pre>
+                    <p>Seznam dříve zadaných příkazů.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>alias - Vytvoření aliasu příkazu.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ alias ll='ls -la'</pre>
+                    <p>Vytvoření aliasu příkazu.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>unalias - Odstranění aliasu.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ unalias ll</pre>
+                    <p>Odstranění aliasu.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>uptime - Zobrazení doby běhu systému.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ uptime</pre>
+                    <p>Zobrazení doby běhu systému.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>shutdown - Okamžité vypnutí systému.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ shutdown -h now</pre>
+                    <p>Okamžité vypnutí systému.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>reboot - Restart systému.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ reboot</pre>
+                    <p>Restart systému.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>mount - Připojení diskového oddílu.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ mount /dev/sdb1 /mnt</pre>
+                    <p>Připojení diskového oddílu.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>umount - Odpojení diskového oddílu.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ umount /mnt</pre>
+                    <p>Odpojení diskového oddílu.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>hostname - Zobrazení jména počítače.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ hostname</pre>
+                    <p>Zobrazení jména počítače.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>uname - Informace o systému.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ uname -a</pre>
+                    <p>Informace o systému.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>env - Zobrazení proměnných prostředí.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ env</pre>
+                    <p>Zobrazení proměnných prostředí.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>export - Nastavení proměnné prostředí.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ export VAR=hodnota</pre>
+                    <p>Nastavení proměnné prostředí.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>source - Načtení skriptu do aktuálního shellu.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ source soubor.sh</pre>
+                    <p>Načtení skriptu do aktuálního shellu.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>cron - Úprava úloh naplánovaných na běh v určitou dobu.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ crontab -e</pre>
+                    <p>Úprava úloh naplánovaných na běh v určitou dobu.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>rsync - Synchronizace souborů mezi adresáři.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ rsync -av zdroj cíl</pre>
+                    <p>Synchronizace souborů mezi adresáři.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>scp - Bezpečné kopírování souborů přes SSH.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ scp soubor.txt user@server:/cesta</pre>
+                    <p>Bezpečné kopírování souborů přes SSH.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>ssh - Připojení k serveru přes SSH.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ ssh user@server</pre>
+                    <p>Připojení k serveru přes SSH.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>screen - Spuštění oddělené terminálové relace.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ screen</pre>
+                    <p>Spuštění oddělené terminálové relace.</p>
+                </div>
+            </div>
+            
+            <div class="command-box">
+                <div class="command-header" onclick="toggleCommand(this)">
+                    <h3>tmux - Alternativa ke `screen`.</h3>
+                </div>
+                <div class="command-content">
+                    <pre>$ tmux</pre>
+                    <p>Alternativa ke `screen`.</p>
+                </div>
+            </div>
+            
 
             <script src="../script/přikazy.js"></script>
         </section>
