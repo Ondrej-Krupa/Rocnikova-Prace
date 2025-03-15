@@ -18,7 +18,7 @@
                     <li><a href="historie.html">Historie Linuxu</a></li>
                     <li><a href="distribuce.html">Distribuce Linuxu</a></li>
                     <li><a href="prikazy.html">Příkazy</a></li>
-                    <li><a href="#Quiz">Quiz</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ ls -la</pre>
-                    <p>Zobrazí seznam souborů a složek v aktuálním adresáři. Použití přepínače `-la` zobrazí i skryté soubory a podrobné informace.</p>
+                    <p>Slouží k zobrazení seznamu souborů a složek v aktuálním adresáři. Použití přepínače <code>-la</code> zobrazí i skryté soubory a podrobné informace, jako jsou oprávnění, vlastník a velikost souborů. Tento příkaz je užitečný pro rychlou kontrolu obsahu adresáře a může být kombinován s dalšími přepínači pro filtrování výsledků.</p>
                 </div>
             </div>
             
@@ -43,7 +43,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ cd /cesta/k/adresáři</pre>
-                    <p>Slouží k přesunu mezi adresáři. Například `cd ..` vás posune o úroveň výše.</p>
+                    <p>Slouží k přesunu mezi adresáři. Například <code>cd ..</code> vás posune o úroveň výše v hierarchii adresářů. Tento příkaz je klíčový pro navigaci v systému souborů a můžete ho použít k přechodu na jakýkoliv adresář, ať už relativně nebo absolutně.</p>
                 </div>
             </div>
             
@@ -53,7 +53,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ pwd</pre>
-                    <p>Zobrazí aktuální pracovní adresář, ve kterém se nacházíte.</p>
+                    <p>Zobrazí aktuální pracovní adresář, ve kterém se nacházíte. Tento příkaz je užitečný pro ověření vaší polohy v systému souborů, zejména při práci s více adresáři. Může být také užitečný v skriptech pro dynamické určení cesty.</p>
                 </div>
             </div>
             
@@ -63,7 +63,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ mkdir nový_adresář</pre>
-                    <p>Vytvoří nový adresář. Například `mkdir moje_slozka` vytvoří složku s názvem 'moje_slozka'.</p>
+                    <p>Vytvoří nový adresář. Například <code>mkdir moje_slozka</code> vytvoří složku s názvem 'moje_slozka'. Tento příkaz je užitečný pro organizaci souborů do strukturovaných adresářů a můžete také vytvořit více úrovní adresářů najednou pomocí <code>mkdir -p cesta/k/adresáři</code>.</p>
                 </div>
             </div>
             
@@ -73,7 +73,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ rmdir prázdný_adresář</pre>
-                    <p>Odstraní prázdný adresář. Pokud obsahuje soubory, je třeba použít `rm -r`.</p>
+                    <p>Odstraní prázdný adresář. Pokud adresář obsahuje soubory, je třeba použít <code>rm -r</code> pro odstranění adresáře i s jeho obsahem. Tento příkaz je užitečný pro údržbu a úklid systému souborů, ale buďte opatrní, abyste neodstranili důležité adresáře.</p>
                 </div>
             </div>
             
@@ -83,7 +83,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ rm soubor.txt</pre>
-                    <p>Slouží k odstranění souborů nebo adresářů. Přepínač `-r` odstraní složku i s obsahem.</p>
+                    <p>Slouží k odstranění souborů nebo adresářů. Přepínač <code>-r</code> odstraní složku i s obsahem. Buďte opatrní při používání tohoto příkazu, protože odstraněné soubory nelze snadno obnovit. Doporučuje se používat <code>rm -i</code> pro interaktivní potvrzení před odstraněním.</p>
                 </div>
             </div>
             
@@ -93,7 +93,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ cp zdroj.txt cíl.txt</pre>
-                    <p>Kopíruje soubory nebo složky. Například `cp soubor.txt /zaloha/` zkopíruje soubor do složky 'zaloha'.</p>
+                    <p>Kopíruje soubory nebo složky. Například <code>cp soubor.txt /zaloha/</code> zkopíruje soubor do složky 'zaloha'. Tento příkaz je užitečný pro zálohování důležitých souborů a můžete použít přepínač <code>-i</code> pro interaktivní potvrzení.</p>
                 </div>
             </div>
             
@@ -103,7 +103,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ mv soubor.txt nový_adresář/</pre>
-                    <p>Přesune nebo přejmenuje soubor. Například `mv starý_název.txt nový_název.txt` přejmenuje soubor.</p>
+                    <p>Přesune nebo přejmenuje soubor. Například <code>mv starý_název.txt nový_název.txt</code> přejmenuje soubor. Tento příkaz je užitečný pro organizaci souborů a jejich přejmenování, a můžete ho také použít k přesunu souborů mezi různými adresáři.</p>
                 </div>
             </div>
             
@@ -113,7 +113,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ touch nový_soubor.txt</pre>
-                    <p>Vytvoří prázdný soubor nebo aktualizuje čas poslední úpravy existujícího souboru.</p>
+                    <p>Vytvoří prázdný soubor nebo aktualizuje čas poslední úpravy existujícího souboru. Tento příkaz je užitečný pro rychlé vytvoření souboru, který můžete později upravit, a může být také použit k aktualizaci časových razítek souborů.</p>
                 </div>
             </div>
             
@@ -123,7 +123,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ find /cesta -name "soubor.txt"</pre>
-                    <p>Hledání souborů v systému.</p>
+                    <p>Hledání souborů v systému podle názvu. Tento příkaz je užitečný pro rychlé nalezení souborů, které nevíte, kde se nacházejí, a můžete také použít další přepínače pro filtrování výsledků podle typu nebo data poslední úpravy.</p>
                 </div>
             </div>
             
@@ -133,7 +133,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ cat soubor.txt</pre>
-                    <p>Zobrazení obsahu souboru.</p>
+                    <p>Zobrazení obsahu souboru přímo v terminálu. Tento příkaz je užitečný pro rychlé prohlížení textových souborů bez nutnosti jejich otevírání v editoru, a můžete ho také použít k zobrazení obsahu více souborů najednou.</p>
                 </div>
             </div>
             
@@ -143,7 +143,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ less soubor.txt</pre>
-                    <p>Postupné procházení obsahu souboru.</p>
+                    <p>Postupné procházení obsahu souboru s možností posouvání nahoru a dolů. Tento příkaz je užitečný pro prohlížení dlouhých souborů, které se nevejdou na obrazovku, a můžete použít klávesové zkratky pro rychlé navigování.</p>
                 </div>
             </div>
             
@@ -153,7 +153,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ more soubor.txt</pre>
-                    <p>Jednodušší alternativa k `less`.</p>
+                    <p>Jednodušší alternativa k <code>less</code>, která umožňuje procházení obsahu souboru po stránkách. Tento příkaz je užitečný pro rychlé prohlížení textových souborů, ale má omezené možnosti navigace ve srovnání s <code>less</code>.</p>
                 </div>
             </div>
             
@@ -163,7 +163,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ head -n 10 soubor.txt</pre>
-                    <p>Zobrazení prvních X řádků souboru.</p>
+                    <p>Zobrazení prvních X řádků souboru. Tento příkaz je užitečný pro rychlé zobrazení obsahu souboru bez nutnosti jeho otevření, a můžete ho použít k rychlému zjištění, zda soubor obsahuje relevantní informace.</p>
                 </div>
             </div>
             
@@ -173,7 +173,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ tail -n 10 soubor.txt</pre>
-                    <p>Zobrazení posledních X řádků souboru.</p>
+                    <p>Zobrazení posledních X řádků souboru. Tento příkaz je užitečný pro sledování posledních změn v logovacích souborech nebo jiných textových souborech, a můžete ho použít s přepínačem <code>-f</code> pro sledování souboru v reálném čase.</p>
                 </div>
             </div>
             
@@ -183,7 +183,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ nano soubor.txt</pre>
-                    <p>Otevření souboru v jednoduchém editoru.</p>
+                    <p>Otevření souboru v jednoduchém textovém editoru. Tento příkaz je užitečný pro rychlé úpravy textových souborů přímo v terminálu, a můžete použít klávesové zkratky pro ukládání a zavírání souboru.</p>
                 </div>
             </div>
             
@@ -193,7 +193,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ vim soubor.txt</pre>
-                    <p>Otevření souboru v pokročilém editoru.</p>
+                    <p>Otevření souboru v pokročilém textovém editoru. Tento příkaz je užitečný pro pokročilé úpravy a programování, a vyžaduje znalost klávesových zkratek pro efektivní práci.</p>
                 </div>
             </div>
             
@@ -203,7 +203,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ grep 'text' soubor.txt</pre>
-                    <p>Hledání textu v souborech.</p>
+                    <p>Hledání specifického textu v souborech. Tento příkaz je užitečný pro rychlé vyhledávání informací v textových souborech, a můžete použít regulární výrazy pro pokročilé vyhledávání.</p>
                 </div>
             </div>
             
@@ -213,7 +213,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ diff soubor1.txt soubor2.txt</pre>
-                    <p>Porovnání dvou souborů.</p>
+                    <p>Porovnání dvou souborů a zobrazení rozdílů mezi nimi. Tento příkaz je užitečný pro sledování změn v souborech, a můžete použít přepínač <code>-u</code> pro zobrazení výstupu v "unified" formátu.</p>
                 </div>
             </div>
             
@@ -223,7 +223,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ wc -l soubor.txt</pre>
-                    <p>Počet řádků, slov a znaků v souboru.</p>
+                    <p>Počet řádků, slov a znaků v souboru. Tento příkaz je užitečný pro analýzu obsahu textových souborů, a můžete použít přepínače <code>-w</code> a <code>-c</code> pro zobrazení počtu slov a znaků.</p>
                 </div>
             </div>
             
@@ -233,7 +233,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ whoami</pre>
-                    <p>Zobrazení aktuálního uživatele.</p>
+                    <p>Zobrazení aktuálního uživatele přihlášeného do systému. Tento příkaz je užitečný pro ověření identity uživatele, zejména při práci s více uživatelskými účty.</p>
                 </div>
             </div>
             
@@ -243,7 +243,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ who</pre>
-                    <p>Seznam přihlášených uživatelů.</p>
+                    <p>Seznam všech uživatelů přihlášených do systému. Tento příkaz je užitečný pro správu uživatelů a sledování aktivit, a můžete použít přepínač <code>-q</code> pro zobrazení pouze počtu přihlášených uživatelů.</p>
                 </div>
             </div>
             
@@ -253,7 +253,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ id uživatel</pre>
-                    <p>Zobrazení informací o uživateli.</p>
+                    <p>Zobrazení informací o uživateli, jako je UID, GID a skupiny. Tento příkaz je užitečný pro správu uživatelských oprávnění a můžete ho použít k ověření, zda má uživatel potřebná oprávnění.</p>
                 </div>
             </div>
             
@@ -263,7 +263,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ passwd</pre>
-                    <p>Změna hesla uživatele.</p>
+                    <p>Umožňuje uživateli změnit své heslo. Tento příkaz je důležitý pro zabezpečení účtu a doporučuje se pravidelně měnit heslo pro ochranu před neoprávněným přístupem.</p>
                 </div>
             </div>
             
@@ -273,7 +273,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ adduser nový_uzivatel</pre>
-                    <p>Přidání nového uživatele.</p>
+                    <p>Přidání nového uživatele do systému. Tento příkaz je užitečný pro správu uživatelských účtů a můžete ho použít k nastavení počátečního hesla a dalších parametrů pro nového uživatele.</p>
                 </div>
             </div>
             
@@ -283,7 +283,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ deluser uživatel</pre>
-                    <p>Smazání uživatele.</p>
+                    <p>Odstranění uživatele ze systému. Tento příkaz je důležitý pro správu uživatelských účtů a zabezpečení systému, a doporučuje se před odstraněním uživatele zkontrolovat, zda nemá žádné aktivní procesy.</p>
                 </div>
             </div>
             
@@ -293,7 +293,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ groups</pre>
-                    <p>Zobrazení skupin aktuálního uživatele.</p>
+                    <p>Zobrazení skupin, do kterých aktuální uživatel patří. Tento příkaz je užitečný pro správu oprávnění a přístupových práv, a můžete ho použít k ověření, zda máte potřebná oprávnění pro určité akce.</p>
                 </div>
             </div>
             
@@ -303,7 +303,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ chmod 755 soubor</pre>
-                    <p>Změna oprávnění souboru.</p>
+                    <p>Změna oprávnění souboru pro uživatele, skupiny a ostatní. Tento příkaz je klíčový pro správu přístupových práv k souborům a můžete použít numerické nebo symbolické notace pro nastavení oprávnění.</p>
                 </div>
             </div>
             
@@ -313,7 +313,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ chown uživatel:skupina soubor</pre>
-                    <p>Změna vlastníka souboru.</p>
+                    <p>Změna vlastníka souboru a skupiny. Tento příkaz je důležitý pro správu přístupových práv a vlastnictví souborů, a doporučuje se používat opatrně, aby nedošlo k nechtěným změnám.</p>
                 </div>
             </div>
             
@@ -323,7 +323,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ df -h</pre>
-                    <p>Zobrazení využití disků.</p>
+                    <p>Zobrazení využití diskového prostoru na připojených discích. Tento příkaz je užitečný pro sledování dostupného místa na disku a můžete použít přepínač <code>-h</code> pro zobrazení velikostí v lidsky čitelném formátu.</p>
                 </div>
             </div>
             
@@ -333,7 +333,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ du -sh složka</pre>
-                    <p>Velikost složky nebo souboru.</p>
+                    <p>Zobrazení velikosti složky nebo souboru. Tento příkaz je užitečný pro analýzu využití diskového prostoru a můžete použít přepínač <code>-h</code> pro zobrazení velikosti v lidsky čitelném formátu.</p>
                 </div>
             </div>
             
@@ -343,7 +343,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ free -m</pre>
-                    <p>Využití RAM.</p>
+                    <p>Zobrazení aktuálního využití paměti RAM. Tento příkaz je užitečný pro sledování výkonu systému a můžete použít přepínač <code>-h</code> pro zobrazení velikostí v lidsky čitelném formátu.</p>
                 </div>
             </div>
             
@@ -353,7 +353,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ top</pre>
-                    <p>Zobrazení běžících procesů.</p>
+                    <p>Zobrazení seznamu běžících procesů a jejich využití systémových prostředků. Tento příkaz je užitečný pro sledování výkonu systému v reálném čase a můžete použít klávesové zkratky pro interakci s procesy.</p>
                 </div>
             </div>
             
@@ -363,7 +363,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ htop</pre>
-                    <p>Interaktivní správce procesů (musí být nainstalován).</p>
+                    <p>Interaktivní správce procesů, který poskytuje více informací a možností než <code>top</code>. Tento příkaz je užitečný pro pokročilé sledování a správu procesů, a můžete použít klávesové zkratky pro rychlou interakci.</p>
                 </div>
             </div>
             
@@ -373,7 +373,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ ps aux</pre>
-                    <p>Seznam běžících procesů.</p>
+                    <p>Zobrazení seznamu všech běžících procesů. Tento příkaz je užitečný pro analýzu a správu procesů v systému, a můžete použít přepínače pro filtrování výsledků podle uživatele nebo stavu procesu.</p>
                 </div>
             </div>
             
@@ -383,7 +383,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ kill PID</pre>
-                    <p>Ukončení procesu podle ID.</p>
+                    <p>Ukončení procesu podle ID. Tento příkaz je užitečný pro správu procesů, ale buďte opatrní, abyste neukončili důležité procesy, které by mohly ovlivnit stabilitu systému.</p>
                 </div>
             </div>
             
@@ -393,7 +393,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ pkill název_procesu</pre>
-                    <p>Ukončení procesu podle jména.</p>
+                    <p>Ukončení procesu podle jména. Tento příkaz je užitečný pro rychlé ukončení procesů bez nutnosti hledat jejich ID, ale opět buďte opatrní při jeho používání.</p>
                 </div>
             </div>
             
@@ -403,7 +403,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ ping 8.8.8.8</pre>
-                    <p>Odeslání testovacích paketů na server.</p>
+                    <p>Odeslání testovacích paketů na server. Tento příkaz je užitečný pro ověření dostupnosti serveru a měření latence, a můžete použít přepínače pro nastavení počtu paketů nebo velikosti.</p>
                 </div>
             </div>
             
@@ -413,7 +413,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ wget https://example.com/soubor</pre>
-                    <p>Stažení souboru z internetu.</p>
+                    <p>Stažení souboru z internetu. Tento příkaz je užitečný pro stahování souborů přímo z příkazového řádku, a můžete použít přepínače pro pokračování v přerušených stahování nebo stahování v pozadí.</p>
                 </div>
             </div>
             
@@ -423,7 +423,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ curl -O https://example.com/soubor</pre>
-                    <p>Alternativní stažení souboru.</p>
+                    <p>Alternativní stažení souboru. Tento příkaz je užitečný pro stahování souborů a interakci s API, a můžete použít různé přepínače pro přizpůsobení požadavků.</p>
                 </div>
             </div>
             
@@ -433,7 +433,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ ifconfig</pre>
-                    <p>Informace o síťových adaptérech (starší systémy).</p>
+                    <p>Informace o síťových adaptérech (starší systémy). Tento příkaz je užitečný pro zobrazení konfigurace síťových rozhraní, ale na novějších systémech je doporučeno používat <code>ip</code>.</p>
                 </div>
             </div>
             
@@ -443,7 +443,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ ip addr</pre>
-                    <p>Novější alternativa `ifconfig`.</p>
+                    <p>Novější alternativa `ifconfig`. Tento příkaz je užitečný pro zobrazení informací o síťových adaptérech a jejich konfiguraci, a můžete ho použít k provádění různých síťových operací.</p>
                 </div>
             </div>
             
@@ -453,7 +453,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ netstat -tulnp</pre>
-                    <p>Zobrazení aktivních síťových spojení.</p>
+                    <p>Zobrazení aktivních síťových spojení. Tento příkaz je užitečný pro sledování síťové aktivity a můžete použít přepínače pro filtrování výsledků podle protokolu nebo stavu spojení.</p>
                 </div>
             </div>
             
@@ -463,7 +463,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ ss -tulnp</pre>
-                    <p>Alternativa `netstat`.</p>
+                    <p>Alternativa `netstat`. Tento příkaz je užitečný pro zobrazení aktivních síťových spojení a poskytuje rychlejší a podrobnější výstup než <code>netstat</code>.</p>
                 </div>
             </div>
             
@@ -473,7 +473,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ tar -cvf archiv.tar složka</pre>
-                    <p>Vytvoření tar archivu.</p>
+                    <p>Vytvoření tar archivu. Tento příkaz je užitečný pro archivaci souborů a složek, a můžete použít přepínače pro kompresi archivu.</p>
                 </div>
             </div>
             
@@ -483,7 +483,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ gzip soubor</pre>
-                    <p>Komprese souboru.</p>
+                    <p>Komprese souboru. Tento příkaz je užitečný pro snížení velikosti souboru a můžete použít přepínače pro specifikaci úrovně komprese.</p>
                 </div>
             </div>
             
@@ -493,7 +493,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ gunzip soubor.gz</pre>
-                    <p>Dekomprese souboru.</p>
+                    <p>Dekomprese souboru. Tento příkaz je užitečný pro obnovení původního souboru po kompresi.</p>
                 </div>
             </div>
             
@@ -503,7 +503,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ zip -r archiv.zip složka</pre>
-                    <p>Vytvoření ZIP archivu.</p>
+                    <p>Vytvoření ZIP archivu. Tento příkaz je užitečný pro archivaci souborů a složek do formátu ZIP, který je široce podporován.</p>
                 </div>
             </div>
             
@@ -513,7 +513,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ unzip archiv.zip</pre>
-                    <p>Rozbalení ZIP archivu.</p>
+                    <p>Rozbalení ZIP archivu. Tento příkaz je užitečný pro obnovení souborů z archivu ZIP.</p>
                 </div>
             </div>
             
@@ -523,7 +523,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ apt update</pre>
-                    <p>Aktualizace seznamu balíčků (Debian/Ubuntu).</p>
+                    <p>Aktualizace seznamu balíčků (Debian/Ubuntu). Tento příkaz je užitečný pro zajištění, že máte nejnovější verze balíčků a jejich závislostí.</p>
                 </div>
             </div>
             
@@ -533,7 +533,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ dnf update</pre>
-                    <p>Aktualizace balíčků (Fedora).</p>
+                    <p>Aktualizace balíčků (Fedora). Tento příkaz je užitečný pro zajištění, že máte nejnovější verze balíčků a jejich závislostí na systému Fedora.</p>
                 </div>
             </div>
             
@@ -543,7 +543,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ pacman -Syu</pre>
-                    <p>Aktualizace balíčků (Arch Linux).</p>
+                    <p>Aktualizace balíčků (Arch Linux). Tento příkaz je užitečný pro zajištění, že máte nejnovější verze balíčků a jejich závislostí na systému Arch Linux.</p>
                 </div>
             </div>
             
@@ -553,7 +553,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ echo 'Ahoj světe'</pre>
-                    <p>Výpis textu do terminálu.</p>
+                    <p>Výpis textu do terminálu. Tento příkaz je užitečný pro rychlé zobrazení textu nebo proměnných a může být použit v skriptech pro generování výstupu.</p>
                 </div>
             </div>
             
@@ -563,7 +563,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ history</pre>
-                    <p>Seznam dříve zadaných příkazů.</p>
+                    <p>Seznam dříve zadaných příkazů. Tento příkaz je užitečný pro rychlé opakování předchozích příkazů a můžete použít přepínače pro filtrování nebo vymazání historie.</p>
                 </div>
             </div>
             
@@ -573,7 +573,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ alias ll='ls -la'</pre>
-                    <p>Vytvoření aliasu příkazu.</p>
+                    <p>Vytvoření aliasu příkazu. Tento příkaz je užitečný pro zjednodušení často používaných příkazů a můžete ho použít k přizpůsobení vašeho shellu.</p>
                 </div>
             </div>
             
@@ -583,7 +583,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ unalias ll</pre>
-                    <p>Odstranění aliasu.</p>
+                    <p>Odstranění aliasu, který byl dříve vytvořen pomocí příkazu <code>alias</code>. Tento příkaz je užitečný, pokud již nepotřebujete zjednodušenou verzi příkazu nebo pokud chcete obnovit původní chování příkazu. Například, pokud jste vytvořili alias <code>alias ll='ls -la'</code>, můžete použít <code>unalias ll</code> k jeho odstranění.</p>
                 </div>
             </div>
             
@@ -593,7 +593,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ uptime</pre>
-                    <p>Zobrazení doby běhu systému.</p>
+                    <p>Zobrazení doby běhu systému od posledního spuštění. Tento příkaz je užitečný pro sledování stability systému a může poskytnout informace o počtu přihlášených uživatelů a průměrném zatížení systému za poslední 1, 5 a 15 minut.</p>
                 </div>
             </div>
             
@@ -603,7 +603,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ shutdown -h now</pre>
-                    <p>Okamžité vypnutí systému.</p>
+                    <p>Okamžité vypnutí systému. Tento příkaz je důležitý pro bezpečné ukončení provozu systému a měl by být používán s opatrností, aby nedošlo k ztrátě dat. Můžete také použít přepínače pro naplánování vypnutí nebo restartování systému.</p>
                 </div>
             </div>
             
@@ -613,7 +613,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ reboot</pre>
-                    <p>Restart systému.</p>
+                    <p>Restart systému. Tento příkaz je užitečný pro rychlé obnovení systému, zejména po instalaci aktualizací nebo změnách konfigurace. Měli byste se ujistit, že jsou uloženy všechny důležité práce před jeho použitím.</p>
                 </div>
             </div>
             
@@ -623,7 +623,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ mount /dev/sdb1 /mnt</pre>
-                    <p>Připojení diskového oddílu.</p>
+                    <p>Připojení diskového oddílu k systému. Tento příkaz je klíčový pro přístup k externím diskům nebo oddílům a umožňuje uživatelům pracovat s obsahem těchto zařízení. Je důležité mít správná oprávnění pro provedení této akce.</p>
                 </div>
             </div>
             
@@ -633,7 +633,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ umount /mnt</pre>
-                    <p>Odpojení diskového oddílu.</p>
+                    <p>Odpojení diskového oddílu. Tento příkaz je důležitý pro bezpečné odpojení zařízení před jeho fyzickým odstraněním, aby se předešlo ztrátě dat nebo poškození souborového systému.</p>
                 </div>
             </div>
             
@@ -643,7 +643,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ hostname</pre>
-                    <p>Zobrazení jména počítače.</p>
+                    <p>Zobrazení jména počítače v síti. Tento příkaz je užitečný pro identifikaci zařízení v síťovém prostředí a může být použit k ověření správné konfigurace sítě.</p>
                 </div>
             </div>
             
@@ -653,7 +653,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ uname -a</pre>
-                    <p>Informace o systému.</p>
+                    <p>Informace o systému, včetně názvu jádra, verze a architektury. Tento příkaz je užitečný pro diagnostiku a správu systému, zejména při řešení problémů s kompatibilitou.</p>
                 </div>
             </div>
             
@@ -663,7 +663,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ env</pre>
-                    <p>Zobrazení proměnných prostředí.</p>
+                    <p>Zobrazení aktuálních proměnných prostředí. Tento příkaz je užitečný pro ověření nastavení prostředí a může být použit k diagnostice problémů s konfigurací.</p>
                 </div>
             </div>
             
@@ -673,7 +673,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ export VAR=hodnota</pre>
-                    <p>Nastavení proměnné prostředí.</p>
+                    <p>Nastavení proměnné prostředí, která bude dostupná pro všechny podřízené procesy. Tento příkaz je užitečný pro přizpůsobení prostředí pro skripty a aplikace.</p>
                 </div>
             </div>
             
@@ -683,7 +683,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ source soubor.sh</pre>
-                    <p>Načtení skriptu do aktuálního shellu.</p>
+                    <p>Načtení skriptu do aktuálního shellu, což umožňuje provádět příkazy v něm bez nutnosti spouštět nový shell. Tento příkaz je užitečný pro načítání konfiguračních souborů a skriptů.</p>
                 </div>
             </div>
             
@@ -693,7 +693,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ crontab -e</pre>
-                    <p>Úprava úloh naplánovaných na běh v určitou dobu.</p>
+                    <p>Úprava úloh naplánovaných na běh v určitou dobu. Tento příkaz je užitečný pro automatizaci úloh a správu plánovaných úloh v systému.</p>
                 </div>
             </div>
             
@@ -703,7 +703,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ rsync -av zdroj cíl</pre>
-                    <p>Synchronizace souborů mezi adresáři.</p>
+                    <p>Synchronizace souborů mezi adresáři. Tento příkaz je užitečný pro zálohování a přenos souborů, a podporuje různé přepínače pro optimalizaci výkonu a šířky pásma.</p>
                 </div>
             </div>
             
@@ -713,7 +713,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ scp soubor.txt user@server:/cesta</pre>
-                    <p>Bezpečné kopírování souborů přes SSH.</p>
+                    <p>Bezpečné kopírování souborů přes SSH. Tento příkaz je užitečný pro přenos souborů mezi lokálním a vzdáleným systémem s šifrováním pro ochranu dat.</p>
                 </div>
             </div>
             
@@ -723,7 +723,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ ssh user@server</pre>
-                    <p>Připojení k serveru přes SSH.</p>
+                    <p>Připojení k serveru přes SSH. Tento příkaz je klíčový pro vzdálenou správu serverů a poskytuje bezpečný způsob, jak se připojit k jinému systému.</p>
                 </div>
             </div>
             
@@ -733,7 +733,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ screen</pre>
-                    <p>Spuštění oddělené terminálové relace.</p>
+                    <p>Spuštění oddělené terminálové relace, která umožňuje uživatelům odpojit a znovu se připojit k relaci. Tento příkaz je užitečný pro dlouhé úlohy, které chcete spustit na serveru.</p>
                 </div>
             </div>
             
@@ -743,7 +743,7 @@
                 </div>
                 <div class="command-content">
                     <pre>$ tmux</pre>
-                    <p>Alternativa ke `screen`.</p>
+                    <p>Alternativa ke `screen`, která poskytuje více funkcí a flexibilitu pro správu terminálových relací. Tento příkaz je užitečný pro pokročilé uživatele, kteří potřebují více možností pro práci s terminálem.</p>
                 </div>
             </div>
             

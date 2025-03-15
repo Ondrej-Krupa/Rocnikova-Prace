@@ -54,7 +54,7 @@ main td img {
 h2 {
     text-align: center;
     margin: 20px 0;
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgb(255, 255, 255); 
     padding: 10px; 
     border-radius: 5px; 
 }
@@ -88,7 +88,7 @@ footer {
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: #ffffffc5;
+    background-color: #ffffff;
     border: none;
     color: #000000;
     text-align: center;
@@ -124,4 +124,7 @@ footer {
     opacity: 1;
     right: 0;
 }
-
+span a {
+    text-decoration: none;
+    color: black;
+}

@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../src/pic/25331.jpg');
+    background-image: url('../src/pic/sl_031420_28950_10.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -36,7 +36,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
-    color: #000000; /* Changed to dark gray for better readability */
+    color: #000000; 
     border-bottom: 1px solid #333;
 }
 
